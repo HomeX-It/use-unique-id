@@ -1,0 +1,50 @@
+{
+    "name": "use-unique-id",
+    "version": "1.0.0",
+    "description": "A react hook for composing unique id&#x27;s with a prefix",
+    "author": "HomeX Toolkit Team",
+    "license": "MIT",
+    "repository": "HomeXLabs/use-unique-id",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "jsnext:main": "dist/index.es.js",
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "scripts": {
+        "test": "cross-env CI=1 react-scripts test --env=jsdom",
+        "test:watch": "react-scripts test --env=jsdom",
+        "build": "rollup -c",
+        "start": "rollup -c -w",
+        "prepare": "npm run build",
+        "predeploy": "cd example && npm install && npm run build",
+        "lint": "eslint --ext .ts,.tsx,.js --max-warnings 0 src/",
+        "format": "./node_modules/.bin/prettier --write \"**/*.{md,js,json,jsx,ts,tsx,yml}\""
+    },
+    "peerDependencies": {
+        "react": "^16.8.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/runtime": "^7.3.1",
+        "@testing-library/react-hooks": "^3.2.1",
+        "@types/jest": "^23.3.13",
+        "@types/react": "^16.7.22",
+        "@types/uuid": "^3.4.6",
+        "cross-env": "^5.2.0",
+        "eslint": "^6.7.2",
+        "prettier": "1.19.1",
+        "react": "^16.8.6",
+        "react-scripts": "^3.3.0",
+        "react-test-renderer": "^16.12.0",
+        "rollup": "^1.1.2",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-node-resolve": "^4.0.0",
+        "rollup-plugin-peer-deps-external": "^2.2.0",
+        "rollup-plugin-typescript2": "^0.25.3",
+        "typescript": "^3.2.4",
+        "uuid": "^3.3.3"
+    }
+}
