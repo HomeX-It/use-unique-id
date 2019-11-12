@@ -1,23 +1,7 @@
-import * as React from 'react';
+import { useState } from "react";
+import uuidv4 from "uuid/v4";
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
-
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, []);
-
-  return counter;
+export const useUniqueId = (prefix: string) => {
+  const [uniqueId] = useState(`${prefix}-${uuidv4()}`);
+  return uniqueId;
 };
