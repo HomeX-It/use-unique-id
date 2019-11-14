@@ -13,18 +13,11 @@ npm install --save use-unique-id
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React from "react";
 
-import { useMyHook } from 'use-unique-id'
+import { useUniqueId } from "use-unique-id";
 
-const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
+useUniqueId("Button");
 ```
 
 ## License
