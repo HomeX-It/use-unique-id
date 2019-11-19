@@ -29,6 +29,8 @@ const App = () => {
 export default App;
 ```
 
+## Output
+
 ![input field with useUniqueId label](./assets/screenshot.png)
 
 ## License
