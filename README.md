@@ -16,9 +16,20 @@ npm install --save use-unique-id
 import React from "react";
 
 import { useUniqueId } from "use-unique-id";
+import "./index.css";
 
-useUniqueId("Button");
+const App = () => {
+  return (
+    <form>
+      <label htmlFor="firstName">{useUniqueId("firstName")}</label>
+      <input name="firstName" />
+    </form>
+  );
+};
+export default App;
 ```
+
+[input field with useUniqueId label](https://github.com/HomeXLabs/use-unique-id.git/assets/screenshot.png)
 
 ## License
 
