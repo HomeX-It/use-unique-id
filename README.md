@@ -29,7 +29,7 @@ const App = () => {
 export default App;
 ```
 
-[input field with useUniqueId label](https://github.com/HomeXLabs/use-unique-id.git/assets/screenshot.png)
+![input field with useUniqueId label](https://github.com/HomeXLabs/use-unique-id.git/assets/screenshot.png)
 
 ## License
 
