@@ -1,42 +1,49 @@
 # use-unique-id
 
-> A react hook for composing unique id&#x27;s with a prefix
+> This is a react hook useful for composing unique id&#x27;s with a human readable prefix.
 
 [![NPM](https://img.shields.io/npm/v/use-unique-id.svg)](https://www.npmjs.com/package/use-unique-id) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+### Install
 
 ```bash
 npm install --save use-unique-id
 ```
 
-## Usage
+### Usage
 
 ```tsx
 import React from "react";
 
 import { useUniqueId } from "use-unique-id";
-import "./index.css";
+import "./style.css";
+
+const App = () => {
+
+import { useUniqueId } from "use-unique-id";
+import 'style.css'
 
 const App = () => {
   return (
-    <form>
-      <label htmlFor="firstName">{useUniqueId("firstName")}</label>
-      <input name="firstName" />
-    </form>
+    <main className={useUniqueId("Main")}>
+      <nav className={useUniqueId("Nav")}>
+        <a className={useUniqueId("NavLink")} href="/">
+          Home
+        </a>
+      </nav>
+    </main>
+  );
+};
+export default App;
   );
 };
 export default App;
 ```
 
-## Output
+### Output
 
 ![input field with useUniqueId label](./assets/screenshot.png)
 
-## License
+### License
 
-MIT © [HomeX Toolkit Team](https://github.com/HomeX Toolkit Team)
-
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
+MIT © [HomeX Labs](https://github.com/homexlabs)

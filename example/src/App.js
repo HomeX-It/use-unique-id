@@ -4,16 +4,13 @@ import { useUniqueId } from "use-unique-id";
 
 const App = () => {
   return (
-    <form
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "24rem"
-      }}
-    >
-      <label htmlFor="firstName">{useUniqueId("firstName")}</label>
-      <input name="firstName" />
-    </form>
+    <main className={useUniqueId("Main")}>
+      <nav className={useUniqueId("Nav")}>
+        <a className={useUniqueId("NavLink")} href="/">
+          Home
+        </a>
+      </nav>
+    </main>
   );
 };
 export default App;
