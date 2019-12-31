@@ -2,6 +2,16 @@
     "name": "use-unique-id",
     "version": "1.0.1",
     "description": "A react hook for composing unique ids with a human readable prefix",
+    "keywords": [
+        "react", 
+        "typescript", 
+        "hook", 
+        "uuid", 
+        "uuid4",
+        "unique id",
+        "unique id generator",
+        "id"
+    ],
     "author": "HomeX Toolkit Team",
     "license": "MIT",
     "repository": "HomeXLabs/use-unique-id",
