@@ -29,7 +29,7 @@ useUniqueId('DropDownInput')
 
 use-unique-id uses uuid/v4 under the hood generating reliable universally unique identifiers (UUIDs).
 
-🚀 made with [create-react-hook](https://github.com/hermanya/create-react-hook).
+🚀 Made with [create-react-hook](https://github.com/hermanya/create-react-hook).
 
 ------------ 
 ### License
