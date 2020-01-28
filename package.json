@@ -3,10 +3,10 @@
     "version": "1.0.1",
     "description": "A react hook for composing unique ids with a human readable prefix",
     "keywords": [
-        "react", 
-        "typescript", 
-        "hook", 
-        "uuid", 
+        "react",
+        "typescript",
+        "hook",
+        "uuid",
         "uuid4",
         "unique id",
         "unique id generator",
@@ -30,7 +30,8 @@
         "prepare": "npm run build",
         "predeploy": "cd example && npm install && npm run build",
         "lint": "eslint --ext .ts,.tsx,.js --max-warnings 0 src/",
-        "format": "./node_modules/.bin/prettier --write \"**/*.{md,js,json,jsx,ts,tsx,yml}\""
+        "format": "./node_modules/.bin/prettier --write \"**/*.{md,js,json,jsx,ts,tsx,yml}\"",
+        "release": "standard-version"
     },
     "peerDependencies": {
         "react": "^16.8.6"
@@ -54,6 +55,7 @@
         "rollup-plugin-node-resolve": "^4.0.0",
         "rollup-plugin-peer-deps-external": "^2.2.0",
         "rollup-plugin-typescript2": "^0.25.3",
+        "standard-version": "^7.0.1",
         "typescript": "^3.2.4",
         "uuid": "^3.3.3"
     }
